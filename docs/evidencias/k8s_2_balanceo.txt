@@ -1,0 +1,37 @@
+﻿PS> 30 peticiones POST /predecir al Service (desde un pod cliente)
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-2sd56
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-2sd56
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-2sd56
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-2sd56
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-2sd56
+credito-api-54f5cdf5cd-2sd56
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-f7sns
+credito-api-54f5cdf5cd-znfh4
+credito-api-54f5cdf5cd-znfh4
+
+Resumen de pods que atendieron (conteo):
+ 12  credito-api-54f5cdf5cd-f7sns
+ 12  credito-api-54f5cdf5cd-znfh4
+  6  credito-api-54f5cdf5cd-2sd56
+

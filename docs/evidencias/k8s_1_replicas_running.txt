@@ -1,0 +1,10 @@
+﻿PS> kubectl get deployment credito-api
+NAME          READY   UP-TO-DATE   AVAILABLE   AGE
+credito-api   3/3     3            3           2m53s
+
+PS> kubectl get pods -l app=credito-api -o wide
+NAME                           READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+credito-api-54f5cdf5cd-2sd56   1/1     Running   0          2m53s   10.244.0.23   desktop-control-plane   <none>           <none>
+credito-api-54f5cdf5cd-f7sns   1/1     Running   0          2m53s   10.244.0.21   desktop-control-plane   <none>           <none>
+credito-api-54f5cdf5cd-znfh4   1/1     Running   0          69s     10.244.0.25   desktop-control-plane   <none>           <none>
+

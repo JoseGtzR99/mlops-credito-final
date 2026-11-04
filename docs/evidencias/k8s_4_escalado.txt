@@ -1,0 +1,27 @@
+﻿PS> kubectl scale deployment credito-api --replicas=5
+deployment.apps/credito-api scaled
+
+PS> kubectl get pods -l app=credito-api
+NAME                           READY   STATUS    RESTARTS   AGE
+credito-api-54f5cdf5cd-8qts8   1/1     Running   0          41s
+credito-api-54f5cdf5cd-f7sns   1/1     Running   0          3m37s
+credito-api-54f5cdf5cd-nb76s   1/1     Running   0          12s
+credito-api-54f5cdf5cd-vq8vs   1/1     Running   0          12s
+credito-api-54f5cdf5cd-znfh4   1/1     Running   0          113s
+
+PS> 40 peticiones con 5 replicas - pods que respondieron:
+  9  credito-api-54f5cdf5cd-znfh4
+  5  credito-api-54f5cdf5cd-8qts8
+ 14  credito-api-54f5cdf5cd-f7sns
+  5  credito-api-54f5cdf5cd-vq8vs
+  7  credito-api-54f5cdf5cd-nb76s
+
+PS> kubectl scale deployment credito-api --replicas=3
+deployment.apps/credito-api scaled
+
+PS> kubectl get pods -l app=credito-api
+NAME                           READY   STATUS    RESTARTS   AGE
+credito-api-54f5cdf5cd-8qts8   1/1     Running   0          54s
+credito-api-54f5cdf5cd-f7sns   1/1     Running   0          3m50s
+credito-api-54f5cdf5cd-znfh4   1/1     Running   0          2m6s
+

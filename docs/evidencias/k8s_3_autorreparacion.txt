@@ -1,0 +1,20 @@
+﻿PS> kubectl get pods -l app=credito-api
+NAME                           READY   STATUS    RESTARTS   AGE
+credito-api-54f5cdf5cd-2sd56   1/1     Running   0          2m56s
+credito-api-54f5cdf5cd-f7sns   1/1     Running   0          2m56s
+credito-api-54f5cdf5cd-znfh4   1/1     Running   0          72s
+
+PS> kubectl delete pod credito-api-54f5cdf5cd-2sd56 --wait=false
+pod "credito-api-54f5cdf5cd-2sd56" deleted from default namespace
+
+PS> 20 peticiones MIENTRAS el pod se recrea
+ 11  credito-api-54f5cdf5cd-f7sns
+  9  credito-api-54f5cdf5cd-znfh4
+
+Peticiones vacias/fallidas: 0
+PS> kubectl get pods -l app=credito-api
+NAME                           READY   STATUS    RESTARTS   AGE
+credito-api-54f5cdf5cd-8qts8   1/1     Running   0          29s
+credito-api-54f5cdf5cd-f7sns   1/1     Running   0          3m25s
+credito-api-54f5cdf5cd-znfh4   1/1     Running   0          101s
+

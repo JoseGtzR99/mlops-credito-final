@@ -1,0 +1,29 @@
+PS> docker images
+REPOSITORY                                  TAG             SIZE
+credito-ui                                  1.0.0           836MB
+credito-api                                 1.0.0           1.32GB
+credito-api                                 1.0             590MB
+
+PS> kubectl get all
+NAME                               READY   STATUS    RESTARTS   AGE
+pod/credito-api-54f5cdf5cd-8qts8   1/1     Running   0          7m23s
+pod/credito-api-54f5cdf5cd-f7sns   1/1     Running   0          10m
+pod/credito-api-54f5cdf5cd-znfh4   1/1     Running   0          8m35s
+pod/credito-ui-7b68f4b789-5lcl2    1/1     Running   0          30s
+
+NAME                      TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+service/credito-service   NodePort    10.96.217.66   <none>        80:30090/TCP   10m
+service/credito-ui        ClusterIP   10.96.96.144   <none>        8501/TCP       3m46s
+service/kubernetes        ClusterIP   10.96.0.1      <none>        443/TCP        2d23h
+
+NAME                          READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/credito-api   3/3     3            3           10m
+deployment.apps/credito-ui    1/1     1            1           3m46s
+
+NAME                                     DESIRED   CURRENT   READY   AGE
+replicaset.apps/credito-api-54f5cdf5cd   3         3         3       10m
+replicaset.apps/credito-ui-64bc974b46    0         0         0       3m46s
+replicaset.apps/credito-ui-7b68f4b789    1         1         1       30s
+
+PS> curl /modelo (desde dentro del cluster)
+{'modelo': 'credito-riesgo', 'alias': 'production', 'version_registry': '2', 'run_id': 'da784e0147f34776a224e3204f2cf643', 'pod': 'credito-api-54f5cdf5cd-f7sns'}
