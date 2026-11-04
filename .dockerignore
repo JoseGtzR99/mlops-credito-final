@@ -1,0 +1,14 @@
+.venv/
+.git/
+mlartifacts/
+mlflow.db
+data/
+docs/
+drift/
+tests/
+ui/
+k8s/
+scripts/
+src/
+*.log
+*.err
