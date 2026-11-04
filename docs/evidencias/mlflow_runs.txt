@@ -1,0 +1,9 @@
+Experimento: credito-riesgo (id 1) - ordenado por roc_auc desc
+
+                          run_id tags.mlflow.runName           params.algoritmo params.n_estimators params.max_depth params.learning_rate  metrics.accuracy  metrics.f1  metrics.roc_auc
+da784e0147f34776a224e3204f2cf643     gb_100_lr010_d3 GradientBoostingClassifier                 100                3                  0.1            0.8733      0.7543           0.9075
+cb9aced04776436facef6625d2e61895     gb_200_lr005_d3 GradientBoostingClassifier                 200                3                 0.05            0.8700      0.7484           0.9068
+427aa35187434714a132a2e2b22484d4     gb_300_lr003_d4 GradientBoostingClassifier                 300                4                 0.03            0.8733      0.7574           0.9045
+bd88279648c34ca2bdf172e6451ce5c8           rf_100_d6     RandomForestClassifier                 100                6                  NaN            0.8578      0.7064           0.9021
+27e8083dfced4598995e347e9acac9cc          rf_150_d10     RandomForestClassifier                 150               10                  NaN            0.8578      0.7253           0.8950
+d962398704e240dc939930c542ce9040         rf_baseline     RandomForestClassifier                  20                3                  NaN            0.8044      0.5533           0.8767

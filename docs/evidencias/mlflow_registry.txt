@@ -1,0 +1,4 @@
+credito-riesgo v2  run_id=da784e0147f34776a224e3204f2cf643  run_name=gb_100_lr010_d3
+credito-riesgo v1  run_id=d962398704e240dc939930c542ce9040  run_name=rf_baseline
+
+Aliases: {'production': '2'}
