@@ -1,0 +1,9 @@
+# Dependencias del servicio de inferencia (imagen Docker). Todas fijadas.
+mlflow==3.18.0
+scikit-learn==1.9.1
+numpy==2.4.6
+pandas==3.1.1
+cloudpickle==3.1.2
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.2

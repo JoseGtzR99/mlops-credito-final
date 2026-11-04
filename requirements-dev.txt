@@ -1,0 +1,8 @@
+# Entrenamiento, pruebas de drift y UI (entorno local, no entra a la imagen)
+-r requirements.txt
+scipy==1.17.1
+matplotlib==3.11.2
+pytest==9.2.0
+streamlit==1.66.1
+requests==2.34.2
+httpx==0.28.1
