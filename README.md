@@ -36,7 +36,7 @@ py -3.11 -m venv .venv ; .\.venv\Scripts\pip install -r requirements-dev.txt
 $env:PYTHONUTF8 = 1
 
 # 1. MLflow (dejar corriendo en otra terminal) -> UI en http://127.0.0.1:5000
-.\scripts\start_mlflow.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\start_mlflow.ps1
 
 # 2. Entrenar: 6 runs + registro de v1 (baseline) y v2 (mejor) con alias production
 .\.venv\Scripts\python -m src.train
@@ -46,7 +46,7 @@ docker build -t credito-api:1.0.0 .
 kubectl apply -f k8s/deployment.yaml -f k8s/service.yaml
 
 # 4. Evidencias de Kubernetes (Running, balanceo, autorreparación, escalado)
-.\scripts\evidencias_k8s.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\evidencias_k8s.ps1
 
 # 5. Drift
 .\.venv\Scripts\python -m pytest -q
