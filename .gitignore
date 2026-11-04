@@ -7,3 +7,4 @@ mlflow.db
 mlflow_server.log
 .pytest_cache/
 *.joblib
+mlflow_server.err
